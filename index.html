@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0998979acf.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="title container-fluid text-center py-2">
+        <h5 class="my-auto  mx-auto py-1">Welcome to Budget Calculator</h5>
+        <div class="date"></div>
+        <div class="budget_block text-left my-1">
+            <div class="column bg-dark text-white mx-auto p-1 my-1 ">Total<div class="total_budget d-inline-block"></div> </div>
+            <div class="column bg-info text-white mx-auto p-1 my-1 ">Income<div class="inc_budget d-inline-block"></div></div>
+            <div class="column bg-warning text-white  mx-auto p-1 my-1 ">Expense<div class="d-inline-block percentage"></div><div class="mx-1 exp_budget d-inline-block"></div></div>
+        </div>
+    </div>
+    
+    <div class="inset container-fluid d-flex  py-3 ">
+            <div class="mr-3 inputcolumn ">
+                <select class="type" name="" id="" >
+                    <option value="inc">Income</option>
+                    <option value="exp">Expense</option>
+                </select>
+            </div>
+            <div  class="mr-3 inputcolumn ">
+                <input class="desc" type="text" placeholder="Enter the description" >
+            </div>
+            <div  class="mr-3 inputcolumn ">
+                <input class="val" type="text" placeholder="Price" >
+            </div>
+            <button class=" btn btn-outline-primary">Submit</button>
+    </div>
+
+    <div class="board container-fluid">
+        <div class="row mx-auto justify-content-center text-center" style="height: 100%;">
+            <div class="col-lg-5">
+                <div class="income_list">
+                    <div class="list_title ">Income</div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="expense_list">
+                    <div class="list_title ">Expense</div>
+
+                    <!-- <div class="list_item">
+                        <div class="id_item">ID</div>
+                        <div class="desc_item">desc</div>
+                        <div class="val_item">value</div>
+                    </div> -->
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
